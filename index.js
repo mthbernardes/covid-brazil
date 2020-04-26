@@ -56,4 +56,4 @@ function getCases(url){
 }
 
 var counties = loadCounties()
-getCases(url);
+getCases(brail_io_url);
