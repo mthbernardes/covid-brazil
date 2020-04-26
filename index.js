@@ -11,7 +11,6 @@ L.tileLayer('https://api.maptiler.com/maps/darkmatter/{z}/{x}/{y}.png?key=HaCoHE
 }).addTo(map);
 
 function createCircle(lat,lng,confirmed,city){
-    console.log(city,confirmed);
     if (confirmed != 0){
         circle = new L.circle([lat, lng], 2000, {
             color: 'red',
@@ -51,4 +50,3 @@ fetch(window.location.href+"/counties.json")
         global_counties = counties;
         getCases(brasil_io_url);
     })
-
