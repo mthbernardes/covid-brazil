@@ -11,7 +11,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
 
 function createCircle(lat,lng,confirmed,city){
     if (confirmed != 0){
-        circle = new L.circle([lat, lng], 2000, {
+        circle = new L.circle([lat, lng], {
             color: 'red',
             opacity: .1,
             radius: confirmed,
