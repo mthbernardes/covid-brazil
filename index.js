@@ -45,7 +45,7 @@ function getCases(url){
         });
 }
 
-fetch("/counties.json")
+fetch(window.location.href+"/counties.json")
     .then(response => response.json())
     .then(counties => {
         global_counties = counties;
